@@ -22,30 +22,30 @@
         <div id="form-container">
           <form id="survey-form" action="thankyou.html">
             <div class="free-text">
-              <label class="label-text" for="name-label">Name</label>
-              <input type="text" id="name-label" name="name" placeholder="Name">
+              <label class="label-text" id="name-label" for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name">
             </div>
             <div class="free-text">
-              <label class="label-text" for="email-label">Email address</label>
-              <input type="email" id="email-label" name="email-add" placeholder="Email address">
+              <label class="label-text" id="email-label" for="email">Email address</label>
+              <input type="email" id="email" name="email-add" placeholder="Email address">
             </div>
             <div class="free-text">
-              <label class="label-text" for="number-label">At what age did you start coding?</label>
-              <input type="number" id="number-label" name="age" placeholder="Age">
+              <label class="label-text" id="number-label" for="number">At what age did you start coding?</label>
+              <input type="number" id="number" name="age" min="1" max="120" placeholder="Age">
             </div>
             <div id="radio-buttons">
               <p>If you were a fruit, what would you be?</p>
               <div id="fruit-list">
-                <input type="radio" id="banana" name="fruit">
-                <label for="banana">Banana</label><br>
-                <input type="radio" id="pear" name="fruit">
-                <label for="pear">Pear</label><br>
                 <input type="radio" id="apple" name="fruit">
                 <label for="apple">Apple</label><br>
-                <input type="radio" id="orange" name="fruit">
-                <label for="orange">Orange</label><br>
+                <input type="radio" id="banana" name="fruit">
+                <label for="banana">Banana</label><br>
                 <input type="radio" id="passionfruit" name="fruit">
                 <label for="passionfruit">Passionfruit</label><br>
+                <input type="radio" id="pear" name="fruit">
+                <label for="pear">Pear</label><br>
+                <input type="radio" id="orange" name="fruit">
+                <label for="orange">Orange</label><br>
                 <input type="radio" id="yuk" name="fruit">
                 <label for="yuk">Fruit? Yuk!</label>
               </div>
@@ -62,12 +62,12 @@
             <div id="checkbox">
               <label class="label-text" for="continents">Which of the 6 continents have you visited?</label>
               <div id="continents-list">
+                <input type="checkbox" name="continents" value="africa">Africa<br>
+                <input type="checkbox" name="continents" value="antarctica">Antarctica<br>
+                <input type="checkbox" name="continents" value="australia">Australia<br>
+                <input type="checkbox" name="continents" value="eurasia">Eurasia<br>
                 <input type="checkbox" name="continents" value="north america">North America<br>
                 <input type="checkbox" name="continents" value="south america">South America<br>
-                <input type="checkbox" name="continents" value="eurasia">Eurasia<br>
-                <input type="checkbox" name="continents" value="antarctica">Antarctica<br>
-                <input type="checkbox" name="continents" value="africa">Africa<br>
-                <input type="checkbox" name="continents" value="australia">Australia<br>
               </div>
             </div>
             <div id="text-area">
@@ -81,6 +81,9 @@
     </main>
     <footer>
       <div id="footer">
+        <div id="footer-div">
+          <p>Design by bayzoo &copy; 2019</p>
+        </div>
       </div>
     </footer>
   </body>
