@@ -12,11 +12,70 @@
         <div id="title">
           <h1>Random Form</h1>
         </div>
+        <div id="description">
+          <p>Please check out our new survey form</p>
+        </div>
       </div>
     </header>
     <main>
-      <div id="main-area">
-        <div id="form-area">
+      <div id="main-container">
+        <div id="form-container">
+          <form id="survey-form" action="thankyou.html">
+            <div class="free-text">
+              <label class="label-text" for="name-label">Name</label>
+              <input type="text" id="name-label" name="name" placeholder="Name">
+            </div>
+            <div class="free-text">
+              <label class="label-text" for="email-label">Email address</label>
+              <input type="email" id="email-label" name="email-add" placeholder="Email address">
+            </div>
+            <div class="free-text">
+              <label class="label-text" for="number-label">At what age did you start coding?</label>
+              <input type="number" id="number-label" name="age" placeholder="Age">
+            </div>
+            <div id="radio-buttons">
+              <p>If you were a fruit, what would you be?</p>
+              <div id="fruit-list">
+                <input type="radio" id="banana" name="fruit">
+                <label for="banana">Banana</label><br>
+                <input type="radio" id="pear" name="fruit">
+                <label for="pear">Pear</label><br>
+                <input type="radio" id="apple" name="fruit">
+                <label for="apple">Apple</label><br>
+                <input type="radio" id="orange" name="fruit">
+                <label for="orange">Orange</label><br>
+                <input type="radio" id="passionfruit" name="fruit">
+                <label for="passionfruit">Passionfruit</label><br>
+                <input type="radio" id="yuk" name="fruit">
+                <label for="yuk">Fruit? Yuk!</label>
+              </div>
+            </div>
+            <div id="dropdown">
+              <label class="label-text" for="scottish">Do you think all Scottish people wear kilts?</label>
+              <select id="scottish" name="scottish">
+                <option value="" disabled selected>Select your option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="who">Who are Scottish people?</option>
+              </select>
+            </div>
+            <div id="checkbox">
+              <label class="label-text" for="continents">Which of the 6 continents have you visited?</label>
+              <div id="continents-list">
+                <input type="checkbox" name="continents" value="north america">North America<br>
+                <input type="checkbox" name="continents" value="south america">South America<br>
+                <input type="checkbox" name="continents" value="eurasia">Eurasia<br>
+                <input type="checkbox" name="continents" value="antarctica">Antarctica<br>
+                <input type="checkbox" name="continents" value="africa">Africa<br>
+                <input type="checkbox" name="continents" value="australia">Australia<br>
+              </div>
+            </div>
+            <div id="text-area">
+              <label class="label-text" for="feedback">Please provide feedback on this form</label>
+              <textarea rows="4" cols="25" id="feedback" placeholder="Feedback"></textarea>
+            </div>
+            <button type="submit">Submit!</button>
+          </form>
         </div>
       </div>
     </main>

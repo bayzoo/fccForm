@@ -6,7 +6,9 @@
 /*text*/
 body {
   font-family: Arial, Verdana, sans-serif;
-  color: #000000;
+}
+p {
+  font-size: 1em;
 }
 h1 {
   font-size: 2em;
@@ -17,33 +19,46 @@ h2 {
 h3 {
   font-size: 1.6em;
 }
+.thankyou h1 {
+  margin: 50px;
+  text-align: center;
+  color: #DEE2EC;
+}
 /*main layout*/
 #header {
   margin: 20px auto 0 auto;
   display: flex;
+  flex-direction: column;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   justify-content: center;
   align-items: center;
   width: 95%;
-  height: 100px;
   background-color: #F38474;
 }
 #title {
-  width: fit-content;
-  height: fit-content;
+  margin: 10px 0;
+}
+#title h1 {
+  font-size: 2.5em;
   color: #F9F8F8;
 }
-#main-area {
+#description {
+  margin-bottom: 10px;
+}
+#description p {
+  color: #F9F8F8;
+}
+#main-container {
   margin: auto;
   padding: 20px 5% 20px 5%;
   width: 85%;
   background-color: #DEE2EC;
 }
-#form-area {
+#form-container {
   max-width: 650px;
-  border-radius: 10px;
-  height: 500px;
+  padding: 20px 0;
+  border-radius: 20px;
   margin: auto;
   background-color: #3A404E;
 }
@@ -58,3 +73,126 @@ h3 {
   height: 50px;
   background-color: #F38474;
 }
+/*form layouts*/
+#survey-form {
+  width: 80%;
+  display: flex;
+  color: #DEE2EC;
+  font-size: 1.2em;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: 2px solid #F38474;
+  border-radius: 20px;
+}
+.free-text {
+  width: 90%;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row;
+}
+input[type=text], input[type=email], input[type=number], textarea, select {
+  font-size: 0.8em;
+
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+#radio-buttons {
+  width: 90%;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row;
+  border: 0;
+}
+#radio-buttons p {
+  box-sizing: border-box;
+  padding-right: 10px;
+  width: 50%;
+  border: 0;
+}
+input[type=radio] {
+  display: table-cell;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+#radio-buttons #fruit-list {
+  width: 50%;
+}
+.label-text {
+  box-sizing: border-box;
+  padding-right: 10px;
+  width: 50%;
+}
+#name-label, #email-label, #number-label {
+  width: 50%;
+  height: 1em;
+}
+#scottish {
+  width: 50%;
+  height: 1.5em;
+  /font-size: 0.8em
+}
+#feedback {
+  width: 50%;
+  font-size: 0.8em;
+}
+#dropdown {
+  width: 90%;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row;
+  border: 0;
+}
+#checkbox {
+  width: 90%;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row;
+  border: 0;
+}
+input[type=checkbox] {
+  display: table-cell;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+#text-area {
+  width: 90%;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row;
+  border: 0;
+}
+button[type=submit] {
+  font-size: 1.2em;
+  color: #DEE2EC;
+  background-color: #F38474;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  color: #3A404E;
+  background-color: #DEE2EC;
+}
+/*phone size media query*/
+@media only screen and (max-width: 414px) {
+  #survey-form {
+    width: 95%;
+    display: flex;
+    color: #DEE2EC;
+    font-size: 1em;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: 0;
+    border-radius: 0;
+}
+.free-text input {
+  font-size: 0.8em;
+  padding: 2px;
